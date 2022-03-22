@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Jun Chen</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <link rel="stylesheet" href="style/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h3><a1 href="index.html">Welcome to the Chen Lab at Mayo Clinic! </a1></h3>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publication.html">Publication</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <!-- insert your sidebar items here -->
+    		<img src="images/jun.jpg" alt='jun' style="width:180px;height:216px;padding:10px 0 0 0">
+    		<li>
+    			<li><i class="fa fa-map-marker fa-1.5x" aria-hidden="true"></i> &nbsp; Rochester, MN, USA</li>
+    			<li><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>   Chen.Jun2@mayo.edu</li>
+          <li><i class="fa fa-link" aria-hidden="true"></i>&nbsp;<a href="https://github.com/jchen1981"> GitHub</a></li>
+          <li><i class="fa fa-book" aria-hidden="true"></i>&nbsp;<a href="https://scholar.google.com/citations?user=gonDvdwAAAAJ&hl=en"> Google Scholar</a></li>
+    			<!--<li><strong>CV:</strong><a id= 'new' href="files/JunChenCV.pdf"> JunChenCV.pdf</a></li>-->
+    		</li>
+      </div>
+      <!--
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <p><a href="https://clustrmaps.com/site/1anup" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=wsQt7iaZx0wAfdCdTAkDI_VwQYIc51qUrH3q8yQ8aeU&cl=ffffff"></a></p>
+        </div>
+      -->
+      </div>
+
+		   <!-- News
+        <div class='sidebar'>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+    		<h5><strong>News</strong></h5>
+            <ul>
+              <li style="list-style-type:disc;margin-left: 15px;"><em><strong>4.2019</strong></em> - Zhihua received the Traffic Safety Scholar at Life Saver Conference in Louisville, KY</li>
+              <li style="list-style-type:disc;margin-left: 15px;"><em><strong>1.2019</strong></em> - Zhihua attended the Transportation Research Board 97th Annual Meeting in Washington D.C.</li>
+              <li style="list-style-type:disc;margin-left: 15px;"><em><strong>8.2018</strong></em> - Zhihua presented at International Geography Union (IGU) Regional Conference in Quebec, Canada</li>
+              <li style="list-style-type:disc;margin-left: 15px;"><em><strong>7.2018</strong></em> - Zhihua received John R. Harper Memorial Scholarship from TSITE</a>, Gatlinburg, Tennessee</li>
+              <a href="#">Read more</a>
+            </ul>
+        </div>
+      </div>
+      -->
+      <!-- content -->
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1> About me </h1>
+        <p>I am an Associate Professor at the <a href="https://www.mayo.edu/research/departments-divisions/computational-biology/overview"> Division of Computational Biology</a>, <a href="https://www.mayo.edu/">Mayo Clinic</a>. I got my Ph.D. in Genomics and Computational Biology with emphasis in Biostatistics and M.S. in statistics from the University of Pennsylvania. Currently my research focuses on the development and application of powerful and robust statistical methods for high-dimensional omics data, especially for microbiome and single-cell sequencing data.</p>
+
+		    <!--slideshow pictures -->
+    		<p></p>
+    		<div style="max-width:620px;">
+    		<img class="mySlides" src="images/cb1.jpg" style="width:80%; height:280px">
+    		<img class="mySlides" src="images/cb2.jpg" style="width:80%; height:280px">
+    		<img class="mySlides" src="images/cb3.jpg" style="width:80%; height:280px">
+    		</div>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      Chen Lab | Biostatistics Group | Mayo Clinic </a>
+    </div>
+  </div>
+</body>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+</html>
